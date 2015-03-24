@@ -1,21 +1,27 @@
 import java.util.Scanner;
 import java.util.Arrays;
-
+import java.math.BigDecimal;
 public class Main {
     public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
         String s;
         int [] array = new int [2];
-        int x, y,z;
-        while(cin.hasNextInt()) {
-            s = cin.nextLine();
+//        int x, y,z;
+        double x,xx;
+        
+        while(cin.hasNextDouble()) {
+            x = cin.nextDouble();
+//            y = cin.nextInt();
+//            z = cin.nextInt();
              
-            x = Integer.parseInt(s.split(" ")[0]);
-            y = Integer.parseInt(s.split(" ")[1]);
-            z = x+y; 
-            double x1 =(double) x;
-            double y1 =(double) y;
-            System.out.println(x1*y1/2);
+            
+//            double x1 =(double) x;
+//            double y1 =(double) y;
+//            double z1 =(double) z;
+            xx =x*x;
+            BigDecimal bd= new BigDecimal(xx);
+            bd=bd.setScale(1, BigDecimal.ROUND_HALF_UP);
+            System.out.println(bd.doubleValue()); 
             
         }
     }
