@@ -13,7 +13,9 @@ public class Main {
             x = Integer.parseInt(s.split(" ")[0]);
             y = Integer.parseInt(s.split(" ")[1]);
             z = x+y; 
-            System.out.println(x*y/2);
+            double x1 =(double) x;
+            double y1 =(double) y;
+            System.out.println(x1*y1/2);
             
         }
     }
